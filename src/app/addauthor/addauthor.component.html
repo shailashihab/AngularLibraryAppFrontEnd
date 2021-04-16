@@ -1,0 +1,83 @@
+
+            
+     <div id="masthead">  
+        <div class="container">
+          <div class="row">
+            <div class="col-md-7">
+              <h1>{{title}}
+                <p class="lead"></p>
+              </h1>
+            </div>
+            <div class="col-md-5">
+              <div class="well well-lg"> 
+                <div class="row">
+                  <div class="col-sm-12">
+                    
+            
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> 
+        </div><!-- /cont -->
+        
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <!-- <div class="top-spacer"> </div> -->
+            </div>
+          </div> 
+        </div><!-- /cont -->
+        
+      </div>
+      
+      
+      <div class="container">
+        <div class="row">
+          
+          <div class="col-md-12"> 
+            
+            <div class="panel">
+              <div class="panel-body">       
+              
+              <!--/stories-->
+              <hr>
+              <div class="row">    
+                <br>
+                <div class="col-md-5 col-sm-3 text-center">
+                  <!-- <a class="story-title" href="#"> -->
+                    <img alt="" [src]="addingAuthor.img"  style="width:250px;height:250px"  class="img-circle">
+                  <!-- </a>     -->
+                </div>
+                <div class="col-md-5 col-sm-9">
+                  <form (ngSubmit)="addNewAuthor()"  method="POST" name="form" enctype="multipart/form-data">
+
+                    <label for="">Name</label>
+                    <input type="text" class="form-control" name="title" [(ngModel)]="addingAuthor.name" >
+                    <br>
+                    <label for="">Title</label>
+                    <input type="text" class="form-control" name="author" [(ngModel)]="addingAuthor.title" >
+                    <br>
+                    <label for="">Works</label>
+                    <input type="text" class="form-control" name="genre" [(ngModel)]="addingAuthor.works" >
+                    <br>
+                    <label for="">Image</label>
+                    <input type="file" name="image" [(ngModel)]="addingAuthor.img" (change)="PickedImg($event)" accept="image/*">
+                    <br><br>
+                    <button type="submit" class="btn btn-primary">Add Author</button>
+
+                  </form>
+                </div>
+              </div>
+              <hr>
+              <!--/stories-->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+  
+  
+  
+

@@ -1,0 +1,13 @@
+.card-head{
+  padding: 10px;
+  width: 100%;
+  background-color:#111166;
+}
+.card-head a{
+  padding: 5px;
+  margin: 5px;
+  text-decoration: none;
+  color: white;
+  font-family:'Oswald',arial narrow,sans-serif;
+  font-size: 18px;
+}

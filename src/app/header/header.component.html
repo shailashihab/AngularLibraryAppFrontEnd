@@ -1,0 +1,10 @@
+<div class="card-head">
+    <a routerLink="">HOME</a>
+    <a routerLink="books">BOOKS</a>
+    <a routerLink="authors">AUTHORS</a>
+    <a routerLink="login" *ngIf='!signupDataServObj.loggedIn()'>LOGIN</a>
+    <a routerLink="signup">SIGNUP</a>
+    <a routerLink="addbook" *ngIf='signupDataServObj.loggedIn()'>ADD BOOKS TO LIST</a>
+    <a routerLink="addauthor" *ngIf='signupDataServObj.loggedIn()'>ADD AUTHORS TO LIST</a>
+    <a routerLink="logout" *ngIf='signupDataServObj.loggedIn()' (click)="logOut()">LOGOUT</a>
+</div>

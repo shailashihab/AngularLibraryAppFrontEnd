@@ -1,0 +1,17 @@
+.panel {
+    background-color:#ffffff;
+    border-color:#ffffff;
+    border-radius:0;
+  }
+  .panel .lead {
+    overflow:hidden;
+    height:90px;
+  }
+  #topPanel {
+    padding-top:0px;
+    padding-left:22px;
+    padding-right:22px;
+  }
+  #topPanel .panel-body {
+    padding-top:0px;
+  }
